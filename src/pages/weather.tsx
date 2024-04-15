@@ -40,9 +40,9 @@ function RenderWeatherDetails({weather}: {weather: any}): JSX.Element {
                 <section>
                     <h2>Current Weather</h2>
                     <img src={weather.current.condition.icon} alt={weather.current.condition.text} />
-                    <p>Temperature: {weather.current.temp_c}°C</p>
+                    <p className="fancy">Temperature: {weather.current.temp_c}°C</p>
                     <p>Condition: {weather.current.condition.text}</p>
-                    <p>Wind: {weather.current.wind_mph} mph</p>
+                    <p className="fancy">Wind: {weather.current.wind_mph} mph</p>
                     <p>Humidity: {weather.current.humidity}%</p>
                     <p>Feels Like: {weather.current.feelslike_c}°C</p>
 
